@@ -1,6 +1,6 @@
-'use strict'
+'use strict';
 
-class pair{
+export class pair {
   constructor(start, end){
     this.start = start;
     this.end = end;
@@ -10,22 +10,27 @@ class pair{
   }
 }
 
-class strike{
-  constructor(game){
-    console.log(game);
+export class strike {
+  constructor(game, xs, xe, ys, ye){
     this.game = game;
     this.renderer = false;
     this.segments = 100;
-    this.x = new pair(0, 800);
-    this.y = new pair(100, 100);
+    this.x = new pair(xs, xe);
+    this.y = new pair(ys, ye);
     this.color = '0xffffff';
     this.width = 1;
     this.modulation = 10;
   }
 
+  setLocation(xs, xe, ys, ye){
+    this.x = new pair(xs, xe);
+    this.y.start = ys || this.y.start;
+    this.x.end   = ye || this.y.end;
+  }
+
   draw(){
     if(!this.renderer){
-      this.renderer = this.game.add.graphics(100, 100);
+      this.renderer = this.game.add.graphics();
     }
     this.renderer.clear();
     this.renderer.moveTo(this.x.start, this.y.start);
