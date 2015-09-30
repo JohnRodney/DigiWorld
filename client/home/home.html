@@ -1,0 +1,18 @@
+<template name="home">
+  {{#if hasName}}
+    {{> game}}
+  {{else}}
+    <div class='login-buttons'>
+      <h1>Digi Doods</h1>
+      <div class='enter-name'>
+        <h2>Enter a name</h2>
+        <input type='text'><br>
+        <button>Submit</button>
+      </div>
+    </div>
+    <div class='login-bg'>
+    </div>
+    <div class='lightning-bg'>
+    </div>
+  {{/if}}
+</template>

@@ -1,0 +1,77 @@
+.login-buttons{
+  width: 400px;
+  height: 400px;
+  position: relative;
+  top: 100px;
+  margin: 0 auto 0 auto;
+  padding: 15px;
+  background-color: rgba( 0, 200, 250, .4 );
+  border-radius: 20px;
+  z-index: 2;
+  color: white;
+  label, a{
+    color: white;
+  }
+  h1{
+    text-align: center;
+  }
+}
+.enter-name{
+  text-align: center;
+  h2{
+    padding-top: 30px;
+  }
+  button{
+    margin-top: 30px;
+    width: 40%;
+    height: 40px;
+    border-radius: 15px;
+    background-color: #05efaf;
+    border: none;
+  }
+  input{
+    height: 20px;
+    font-size: 20px;
+  }
+}
+.login-bg{
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('Panthor.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  z-index: 1;
+  background-size: auto 100%;
+}
+#login-buttons, .accounts-dialog, .login-form{
+  width: 100%;
+  height: 400px;
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
+}
+
+.login-form{
+  padding-top: 20px;
+}
+.login-link-text, .login-close-text{
+  display: none;
+}
+.lightning-bg{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('lightning.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: black;
+  z-index: 0;
+}
