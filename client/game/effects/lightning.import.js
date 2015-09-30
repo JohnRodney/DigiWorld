@@ -22,12 +22,6 @@ export class strike {
     this.modulation = 10;
   }
 
-  setLocation(xs, xe, ys, ye){
-    this.x = new pair(xs, xe);
-    this.y.start = ys || this.y.start;
-    this.x.end   = ye || this.y.end;
-  }
-
   draw(){
     if(!this.renderer){
       this.renderer = this.game.add.graphics();
@@ -46,7 +40,5 @@ export class strike {
     return Math.floor(Math.random()*this.modulation)-this.modulation/2;
   }
 }
-
-
 
 export default strike;
